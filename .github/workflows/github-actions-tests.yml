@@ -1,4 +1,4 @@
-name: author's tests
+name: Linter
 
 on:
   - push
