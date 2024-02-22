@@ -8,7 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
       - uses: actions/checkout@v3
-        # Step's name
+      - uses: actions/setup-node@v3
       - name: Linter check and authors tests
-      - run: make lint
+      - run: npx eslint .
