@@ -1,0 +1,14 @@
+name: author's tests
+
+on:
+  - push
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        # Step's name
+      - name: Linter check and authors tests
+      - run: make lint
